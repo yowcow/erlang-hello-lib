@@ -10,6 +10,7 @@ compile: $(REBAR)
 	$(REBAR) compile
 
 test: $(REBAR)
+	$(REBAR) dialyzer
 	$(REBAR) eunit
 
 clean:
