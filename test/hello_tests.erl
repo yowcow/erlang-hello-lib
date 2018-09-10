@@ -24,3 +24,6 @@ add_test_() ->
         ?_assertEqual(Expected, Actual)
     end,
     lists:map(F, Cases).
+
+add_version2_test() ->
+    ?assertEqual(3, hello:'add.version2'(1, 2)).

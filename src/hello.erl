@@ -3,7 +3,8 @@
 %% API exports
 -export([
     message/1,
-    add/2
+    add/2,
+    'add.version2'/2
 ]).
 
 %%====================================================================
@@ -18,6 +19,9 @@ message(Name) ->
 
 -spec add(integer(), integer()) -> integer().
 add(A, B) ->
+    A + B.
+
+'add.version2'(A, B) ->
     A + B.
 
 %%====================================================================
